@@ -1,0 +1,18 @@
+{
+  "name": "appstore-monitoring",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Baranowicz",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "nodemailer": "^6.7.0",
+    "request": "^2.88.2",
+    "require": "^2.4.20"
+  }
+}
