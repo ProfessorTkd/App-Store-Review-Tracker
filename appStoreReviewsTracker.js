@@ -86,8 +86,8 @@ async function sendNotification(reviews) {
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'silvertongue122333@gmail.com',
-        pass: 'demo@12321'
+        user: '**********@gmail.com',
+        pass: '*****'
       }
     });
   
@@ -100,8 +100,8 @@ async function sendNotification(reviews) {
     }
   
     let info = await transporter.sendMail({
-      from: '"Reviews Notifier" <silvertongue122333@gmail.com>',
-      to: "tapurawattkd@gmail.com",
+      from: '"Reviews Notifier" <**********@gmail.com>',
+      to: "*************@gmail.com",
       subject: "New Reviews!", 
       text: textToSend,
       html: htmlText
@@ -110,7 +110,7 @@ async function sendNotification(reviews) {
     console.log("Message sent: %s", info.messageId);
 }
 
-let job = new CronJob('*/30 * * * * *', function() { //runs every 15 seconds in this config
+let job = new CronJob('*/30 * * * * *', function() { //runs every 30 seconds in this config
     startMonitoring();
   }, null, true, null, null, true);
 job.start();
